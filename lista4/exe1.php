@@ -4,13 +4,13 @@
     $op= $_POST["opOperacao"];
 
     if($o=="soma"){
-        echo "Resultado: " .($num1+$num2);
+        echo ($num1+$num2);
     }elseif($o=="sub"){
-        echo "Resultado: " .($num1-$num2);
+        echo ($num1-$num2);
     }elseif($op=="div"){
-        echo "Resultado: " .($num1/$num2);
+        echo ($num1/$num2);
     }elseif($op=="mult"){
-        echo "Resultado: " .($num1*$num2);
+        echo ($num1*$num2);
     }
 
 

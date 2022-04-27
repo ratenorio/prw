@@ -5,7 +5,6 @@
     $result= mysqli_query($con, $sql);
     //retorna a primeira linha
     $row= mysqli_fetch_array($result);
-    print_r($row);
 
 ?>
 <!DOCTYPE html>

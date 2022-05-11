@@ -12,11 +12,12 @@
 </head>
     <body>
         <h1>Alteração do Usuario</h1>
-        <form action="cadastro_usuario.php" method="post">
-            Nome: <input type="text" name="txtNome" value ="<?php echo $row['nome_usuario']?>" size="50"><br>
-            E-mail: <input type="text" name="txtEmail" value ="<?php echo $row['email_usuario']?>" size="50"><br>
-            Telefone: <input type="text" name="txtTel" value ="<?php echo $row['telefone_usuario']?>" size="30"><br>
+        <form action="altera_usuario_exe.php" method="post">
+            Nome: <input type="text" name="nome" value ="<?php echo $row['nome_usuario']?>" size="50"><br>
+            E-mail: <input type="text" name="email" value ="<?php echo $row['email_usuario']?>" size="50"><br>
+            Telefone: <input type="text" name="telefone" value ="<?php echo $row['telefone_usuario']?>" size="30"><br>
             <input type="submit" value="enviar">
+            <input name="id_usuario" type="hidden" value="<?php echo $row['id_usuario']?>">
         </form>
     </body>
 

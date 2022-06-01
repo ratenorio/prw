@@ -12,6 +12,7 @@
 </head>
     <body>
         <h1>Alteração da Agenda</h1>
+        <?php echo "<img class= 'center' src='data:image/jpeg;base64,".base64_encode( $row["foto_blob"])."'width='150' height='150'/>";?>
         <form action="altera_agenda_exe.php" method="post" enctype="multipart/form-data">
             <table align="center ">
             <tr>

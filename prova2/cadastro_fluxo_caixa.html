@@ -1,0 +1,48 @@
+<html>
+<head>
+    <meta charset="utf-8">
+</head>
+    <body>
+
+        <form action="cadastro_fluxo_caixa.php" method="post" align= "center" enctype="multipart/form-data"><h1>Cadastro</h1>
+            <table align= "center" >
+                <tr>
+                    <td>Data:</td>
+                    <td><input type="date" name="data"></td>
+                </tr>
+                <tr>
+                    <td>Tipo:</td>
+                    <td><input type="radio" name="tipo" value="entrada">Entrada 
+                        <input type="radio" name="tipo" value="saida">Saida</td>
+
+                </tr>
+                <tr>
+                    <td>Valor:</td>
+                    <td><input type="text" name="valor" size="20"></td>
+                </tr>
+                <tr>
+                    <td>Historico: </td>
+                    <td><input type="text" name="historico" size="50"></td>
+                </tr>
+                <tr>
+                    <td>Cheque: </td>
+                    <td><select name="cheque" >
+                        <option value="sim">Sim</option>
+                        <option value="nao">Nao</option>
+                        
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"> <input type="submit" value="enviar"> </td>
+                    
+                </tr>
+
+
+
+                
+            </table>
+        </form>
+    </body>
+
+</html>

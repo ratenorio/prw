@@ -20,8 +20,8 @@
             </tr>
             <tr>
                 <td>Tipo:</td>
-                    <td>Entrada<input type="radio" name="tipo" value= "entrada"value="<?php echo $row['tipo']?>"></td>
-                    <td>Saida<input type="radio" name="tipo" value="saida" value="<?php echo $row['tipo']?>"></td>
+                    <td>Entrada<input type="radio" name="tipo" value= "entrada"  <?php if($row['tipo']=="entrada") echo "checked " ?>></td>
+                    <td>Saida<input type="radio" name="tipo" value="saida" <?php if($row['tipo']=="saida") echo "checked " ?>></td>
 
             </tr>
             <tr>
@@ -34,9 +34,9 @@
             </tr>
             <tr>
                 <td>Cheque:</td>
-                <td><select name="cheque" <?php echo $row['cheque']?> ><br>> 
-                        <option value="sim">Sim</option>
-                        <option value="nao">Nao</option>
+                <td><select name="cheque"><br>> 
+                        <option value="sim" <?php if($row['cheque']=="sim") echo "selected " ?>>Sim</option>
+                        <option value="nao" <?php if($row['cheque']=="nao") echo "selected " ?>>Nao</option>
                         
                     </select>
             </td>
